@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Image</title>
+  <script>
+    function displayImage() {
+      var images = ['https://www.emojiall.com/images/60/apple/1f975.png', 'https://www.emojiall.com/images/60/apple/1f924.png', 'https://www.emojiall.com/images/60/apple/1f90f-1f3fc.png','https://www.emojiall.com/images/60/apple/1f44d.png','https://www.emojiall.com/images/60/apple/1f60e.png','https://www.emojiall.com/images/60/apple/1f47b.png','https://www.emojiall.com/images/60/apple/1f4a9.png','https://www.emojiall.com/images/60/apple/1f633.png','https://www.emojiall.com/images/60/apple/1f630.png','https://www.emojiall.com/images/60/apple/1f9d0.png','https://www.emojiall.com/images/60/apple/1f973.png','https://www.emojiall.com/images/60/apple/1f60f.png','https://www.emojiall.com/images/60/apple/1f636.png','https://www.emojiall.com/images/60/apple/1f636.png','https://www.emojiall.com/images/60/apple/1f914.png','https://www.emojiall.com/images/60/apple/1f602.png','https://www.emojiall.com/images/60/apple/1f970.png','https://www.emojiall.com/images/60/apple/1f605.png','https://www.emojiall.com/images/60/apple/1f606.png','https://www.emojiall.com/images/60/apple/1f600.png'];
+
+      var randomImage = images[Math.floor(Math.random() * images.length)];
+      document.getElementById("randomImage").src = randomImage;
+    }
+  </script>
+</head>
+<body onload="displayImage()">
+  <img id="randomImage" />
+</body>
+</html>
